@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Visual Studio Code</title>
+    </head>
+    <body>
+        <div style="display: flex; justify-content: space-between; padding-left: 75px; padding-right: 75px; padding-bottom: 25px; padding-top: 25px;">
+            <div style="display: flex; justify-content: space-between;">
+                <div style=" display: flex; justify-content: space-between; padding: 10px;">
+                    <div><img src="logo.png" alt="Logo" style="padding-right: 2px;"></div>
+                    <div style="padding-left: 2px;">Visual Studio Code</div>
+                </div>
+                <div style="padding: 10px;">
+                    Docs
+                </div>
+                <div style="padding: 10px;">
+                    Updates
+                </div>
+                <div style="padding: 10px;">
+                    Blog
+                </div>
+                <div style="padding: 10px;">
+                    API
+                </div>
+                <div style="padding: 10px;">
+                    Extensions
+                </div>
+                <div style="padding: 10px;">
+                    MCP
+                </div>
+                <div style="padding: 10px;">
+                    FAQ
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; padding: 15px;">
+                <div>
+                    <button>☀️</button>
+                </div>
+                <div>
+                    <input type="text" placeholder="Search Docs">
+                </div>
+                <div>
+                    <button>Download</button>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 80px;">
+            <h1>The open source</h1>
+            <h1>AI code editor</h1>
+        </div>
+        
+        <div center>
+            <button> Download for Windows</button>
+        </div>
+    </body>
+</html>
