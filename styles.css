@@ -1,105 +1,77 @@
-/* Global Styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #222;
-    line-height: 1.6;
-}
-a {
-    text-decoration: none;
-    color: #222;
-}
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: "Segoe UI", sans-serif; color: #232323; }
 
-/* Navigation */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+/* HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-.nav-links li {
-    display: inline-block;
-    margin-left: 1.6rem;
-}
-.nav-links a:hover {
-    color: #0077cc;
-}
+.nav { display: flex; justify-content: space-between; padding: 1rem 2rem; }
+.nav-links li { display: inline; margin-left: 1.8rem; }
+.nav-links a { text-decoration: none; color: #232323; font-weight: 500; }
+.nav-links a:hover { color: #0077cc; }
 
-/* Hero Section */
+/* HERO */
 .hero {
-    height: 90vh;
-    background: url('your-hero-image.jpg') center/cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
+  height: 90vh;
+  background: url("hero-bg.jpg") center/cover no-repeat;
+  display: flex; justify-content: center; align-items: center;
+  text-align: center; color: white;
+  padding: 2rem;
 }
-.hero-text h1 {
-    font-size: 3rem;
-}
-.highlight {
-    color: #ffdd57;
-}
+.animate { animation: fadeIn 1.8s ease both; }
+@keyframes fadeIn { from {opacity:0; transform: translateY(20px);} to {opacity:1; transform: none;} }
+.hero h1 span { color: #ffdd57; }
 .btn {
-    display: inline-block;
-    padding: 0.8rem 1.6rem;
-    background: #0077cc;
-    color: #fff;
-    border-radius: 4px;
-    margin-top: 1rem;
+  background: #0077cc; padding: 0.8rem 1.5rem; color: white; border-radius: 5px;
+  margin-top: 1rem; display: inline-block;
 }
 
-/* About Section */
-.about-section {
-    padding: 3rem 2rem;
-    background: #f9f9f9;
-    text-align: center;
-}
+/* ABOUT */
+.about-section { padding: 3rem 2rem; text-align: center; }
 
-/* Projects Grid */
-.projects-section {
-    padding: 3rem 2rem;
+/* SKILLS */
+.skills-section { padding: 2rem; }
+.skill-bar { margin: 1rem 0; }
+.skill-bar span { font-size: 1rem; }
+.bar {
+  height: 9px; background: #ddd;
+  border-radius: 4px; margin-top: 0.4rem;
 }
+.html-bar { width: 90%; background: #e44d26; }
+.css-bar { width: 85%; background: #264de4; }
+.resp-bar { width: 80%; background: #4caf50; }
+
+/* PROJECTS */
+.projects-section { padding: 3rem 2rem; }
 .project-grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: grid; gap: 1.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
 }
 .project-card {
-    background: #fff;
-    padding: 1.6rem;
-    border-radius: 6px;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  position: relative; overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-.project-img {
-    height: 160px;
-    background-size: cover;
-    border-radius: 4px;
-    margin-bottom: 1rem;
+.proj-img {
+  height: 180px; background-size: cover; background-position: center;
 }
-.img1 { background-image: url('proj1.jpg'); }
-.img2 { background-image: url('proj2.jpg'); }
-.img3 { background-image: url('proj3.jpg'); }
-
-/* Contact Section */
-.contact-section {
-    padding: 2rem;
-    text-align: center;
-    background: #f2f2f2;
-}
-.contact-section a {
-    font-weight: bold;
-    color: #0077cc;
+.img1 { background-image: url("proj1.jpg"); }
+.img2 { background-image: url("proj2.jpg"); }
+.img3 { background-image: url("proj3.jpg"); }
+.proj-info {
+  padding: 1rem; background: white;
 }
 
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 1rem;
-    background: #222;
-    color: #fff;
-}
+/* EXPERIENCE */
+.experience-section { padding: 3rem 2rem; }
+.timeline .entry { border-left: 3px solid #0077cc; padding-left: 1rem; margin-bottom: 1rem; }
+
+/* CONTACT */
+.contact-section { padding: 2rem; text-align: center; }
+
+/* FOOTER */
+.footer { background: #111; color: white; text-align: center; padding: 1rem; }
