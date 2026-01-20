@@ -1,0 +1,7 @@
+.btn-shadow {
+  transition: border 0.3s ease;
+}
+
+.btn-shadow:hover {
+  border: gray 1px solid;
+}
